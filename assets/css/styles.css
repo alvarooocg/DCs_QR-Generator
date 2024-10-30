@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url("../img/bg-illustration.svg") right no-repeat;
+    background-color: #111729;
+
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    height: 100%;
+    margin-top: 300px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__title {
+    margin-bottom: 20px;
+}
+
+.generator__form {
+    width: 630px;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3px;
+
+    border-radius: 15px;
+    border: 2px solid #3662E3 ;
+}
+
+.form__input {
+    width: 80%;
+    height: 90%;
+    background-color: #111729;
+    color: white;
+
+    border-style: none;
+
+    padding: 0 23px;
+}
+
+.form__input::placeholder {
+    color: #364153;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.input__btn {
+    width: 150px;
+    height: 45px;
+
+    border-radius: 15px;
+    background-color: #3662E3;
+    border: none;
+    color: #F2F5F9;
+    cursor: pointer;
+}
+
+.main__qr {
+    width: 100%;
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.qr__btns {
+    display: flex;
+    gap: 50px;
+
+    margin-top: 100px;
+}
+
+.qr__circle {
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+    background-color: rgba(54, 98, 227, 0.3);
+}
+
+.qr__code {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    opacity: 1;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr__btn--download, .qr__btn--share {
+    width: 200px;
+    height: 50px;
+
+    border-radius: 10px;
+    background-color: #3662E3;
+
+    font-size: 1rem;
+    color: white;
+
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    border: none;
+}
