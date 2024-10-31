@@ -54,10 +54,10 @@ function generateQR() {
 
 function copyQRLink() {
     console.log('Clicked');
-    const text = document.querySelector(".form__input").value;
+    const qrImage = qrCode._el.querySelector("img");
 
-    if (text) {
-        navigator.clipboard.writeText(text).then(() => {
+    if (qrImage && qrImage.src) {
+        navigator.clipboard.writeText(qrImage.src).then(() => {
             alert("Enlace copiado al portapapeles.");
         }, () => {
             alert("No se pudo copiar el enlace.")
